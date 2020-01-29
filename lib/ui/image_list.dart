@@ -9,9 +9,7 @@ class ImageListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     bloc.fetchAllMovies();
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Popular Movies'),
-      ),
+      appBar: AppBar(),
       body: StreamBuilder(
         stream: bloc.allImages,
         builder: (context, AsyncSnapshot<ImageList> snapshot) {
